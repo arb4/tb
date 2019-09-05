@@ -148,7 +148,19 @@ var Z1_2501 = L.geoJSON(Z1_2501, {
   }
   }).addTo(map);
 
+    var Z6_2501 = L.geoJSON(Z6_2501, {
+	style: style11,
+    onEachFeature: function (feature, layer) {
+    layer.bindPopup('</h2><p>EQUIPO 5</p>'+feature.properties.FECHA+'</p>');
+  }
+  }).addTo(map);
 
+  var Z8_2501 = L.geoJSON(Z8_2501, {
+	style: style9,
+    onEachFeature: function (feature, layer) {
+    layer.bindPopup('</h2><p>EQUIPO 5</p>'+feature.properties.FECHA+'</p>');
+  }
+  }).addTo(map);
  /* 
   var N109_2401 = L.geoJSON(N109_2401, {
 	style: style6,
